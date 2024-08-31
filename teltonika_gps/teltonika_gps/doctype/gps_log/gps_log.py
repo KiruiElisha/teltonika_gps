@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class GPSLogs(Document):
+class GPSLog(Document):
 	pass

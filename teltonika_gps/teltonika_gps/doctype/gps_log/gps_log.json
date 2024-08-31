@@ -9,6 +9,7 @@
   "recieved_at",
   "longitude",
   "latitude",
+  "vehicle",
   "column_break_jwdg",
   "speed",
   "device_id",
@@ -54,14 +55,19 @@
   {
    "fieldname": "column_break_jwdg",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Data",
+   "label": "Vehicle"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-27 16:59:18.092601",
+ "modified": "2024-08-28 17:38:57.823240",
  "modified_by": "Administrator",
  "module": "Teltonika GPS",
- "name": "GPS Logs",
+ "name": "GPS Log",
  "owner": "Administrator",
  "permissions": [
   {

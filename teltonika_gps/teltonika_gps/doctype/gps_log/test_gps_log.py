@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestGPSLogs(FrappeTestCase):
+class TestGPSLog(FrappeTestCase):
 	pass
