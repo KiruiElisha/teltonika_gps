@@ -277,6 +277,7 @@ script.onerror = function() {
         message: __('Failed to load Google Maps API. Please check your internet connection and try again.')
     });
 };
+
 document.head.appendChild(script);
 
 function addCustomControls() {
