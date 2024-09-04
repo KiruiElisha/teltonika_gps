@@ -1,0 +1,54 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="vehicle-tracking-page">
+    <h1>{{ _("Vehicle Tracking") }}</h1>
+    <div id="map-container" style="height: 500px;"></div>
+    <div id="vehicle-list"></div>
+</div>
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<style>
+    /* Add your custom styles here */
+    .leaflet-control-layers {
+        max-height: none !important;
+        max-width: none !important;
+    }
+    .leaflet-control-layers-expanded {
+        display: block !important;
+    }
+    .custom-div-icon .marker-pin {
+        width: 30px;
+        height: 30px;
+        border-radius: 50% 50% 50% 0;
+        background: #c30b82;
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 50%;
+        top: 50%;
+        margin: -15px 0 0 -15px;
+    }
+    .info-control, .legend, .statistics {
+        padding: 6px 8px;
+        font: 14px/16px Arial, Helvetica, sans-serif;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+    .pulsing-icon {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+    }
+</style>
+{% endblock %}
+
+{% block script %}
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+{% endblock %}
